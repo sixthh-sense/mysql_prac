@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class TestForJDBC {
     static Secret secret = new Secret();
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/?user=root"; // copy jdbc connection string to clipboard
+        // String url = ""; // copy jdbc connection string to clipboard
         Connection con = null;
 
         try {
@@ -20,7 +20,7 @@ public class TestForJDBC {
         }
 
         try {
-            con = DriverManager.getConnection(url, secret.db_id, secret.db_pw);
+            con = DriverManager.getConnection(secret.db_url, secret.db_id, secret.db_pw); // perspective: outside database(s) - whole server?
             System.out.println("Successfully connected to DBMS!");
         } catch(SQLException e) {
             System.err.println("SQL Error: " + e.getMessage());
