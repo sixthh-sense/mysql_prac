@@ -4,6 +4,13 @@ import udemy.mysql.secret.Secret;
 
 import java.sql.*;
 
+/* 20230123
+* When gitignore is not working: https://stackoverflow.com/questions/25436312/gitignore-not-working
+* (have to delete cache: git rm -rf --cached .)
+* also, when u uploaded private info on github by mistake,
+* I'll delete commit history instead of deleting the repository itself
+* */
+
 public class Main {
 
 
