@@ -1,4 +1,4 @@
-package udemy.mysql;
+package udemy.mysql.jdbc;
 
 import udemy.mysql.secret.Secret;
 
