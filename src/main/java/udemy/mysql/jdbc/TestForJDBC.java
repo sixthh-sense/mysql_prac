@@ -20,7 +20,8 @@ public class TestForJDBC {
         }
 
         try {
-            con = DriverManager.getConnection(secret.db_url, secret.db_id, secret.db_pw); // perspective: outside database(s) - whole server?
+            // perspective: outside database(s) - whole server?
+            con = DriverManager.getConnection(secret.db_url, secret.db_id, secret.db_pw);
             System.out.println("Successfully connected to DBMS!");
         } catch(SQLException e) {
             System.err.println("SQL Error: " + e.getMessage());
